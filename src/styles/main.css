@@ -6,24 +6,26 @@
   html,
   body {
     overflow-x: hidden;
+    background-color: #19161B;
+    color: #FFFFFF;
   }
 }
 
 @layer components {
   .typo-h1 {
-    @apply font-display text-2xl md:text-4xl lg:text-5xl font-semibold;
+    @apply font-display text-2xl md:text-4xl lg:text-5xl font-bold;
   }
 
   .typo-h2 {
-    @apply font-display text-2xl md:text-3xl lg:text-4xl font-semibold;
+    @apply font-display text-2xl md:text-3xl lg:text-4xl font-bold;
   }
 
   .typo-h3 {
-    @apply font-display text-2xl md:text-3xl font-semibold;
+    @apply font-display text-2xl md:text-3xl font-bold;
   }
 
   .typo-h4 {
-    @apply font-display text-2xl font-semibold;
+    @apply font-display text-2xl font-medium;
   }
 
   .typo-h5 {
@@ -31,7 +33,7 @@
   }
 
   .typo-h6 {
-    @apply font-display text-base font-semibold;
+    @apply font-display text-base font-semibold uppercase;
   }
 
   .typo-blockquote {
@@ -39,7 +41,7 @@
   }
 
   .typo-intro {
-    @apply font-body text-base font-semibold;
+    @apply font-body text-base font-medium;
   }
 
   .typo-body {
@@ -58,7 +60,7 @@
 
   .container-lg {
     @apply mx-auto px-4;
-    max-width: 1300px;
+    max-width: 1280px;
   }
 
   .container-md {
@@ -134,4 +136,12 @@
   .pb-full {
     padding-bottom: 100%;
   }
+}
+
+.text-orange-500 {
+color: rgba(255, 181, 119, 1);
+};
+
+.bg-orange-500 {
+background-color: rgba(255, 181, 119, 1);
 }
